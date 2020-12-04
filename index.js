@@ -12,7 +12,7 @@ app.use(express.json());
 // allowing below URL to access these APIs end-points
 // you can replace this URL(http://localhost:8100) with your
 // application URL from where you are calling these APIs
-app.use(cors({origin: 'http://localhost:5432'}));
+app.use(cors({origin: 'https://obscure-tor-85795.herokuapp.com/'}));
 
 /* this '/items' URL will have two end-points:
 → localhost:3000/items/ (this returns array of objects)
