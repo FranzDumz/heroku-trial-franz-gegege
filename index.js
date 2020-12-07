@@ -22,10 +22,10 @@ app.use('/items', itemsRouter);
 
 // default URL to API
 app.use('/', function(req, res) {
-    res.send('node-ex-api works :-)asdsdasda');
+    res.send('node-ex-api works :-)sadadddasdasdas');
 });
 
 const server = http.createServer(app);
 const port = 5432;
-server.listen(process.env.PORT || 5000);+
+server.listen(process.env.PORT || 5432);+
 console.debug('Server listening on port ' + port);
