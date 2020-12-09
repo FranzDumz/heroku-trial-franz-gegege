@@ -31,7 +31,8 @@ or
 ## Documentation
 
 For more information about using Node.js on Heroku, see these Dev Center articles:
-
+- https://medium.com/javascript-in-plain-english/create-rest-api-web-services-using-node-js-and-express-js-with-crud-operations-ff790d6ae030 code reference API CRUD
+-  https://devcenter.heroku.com/articles/getting-started-with-nodejs#provision-a-database provisioning database
 - [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 - [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
 - [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
