@@ -10,7 +10,7 @@ Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cl
 
 ```sh
 $ git clone https://github.com/FranzDumz/heroku-trial-franz-gegege.git # or clone your own fork
-$ cd node-js-getting-started
+$ cd heroku-trial-franz-gegege
 $ npm install
 $ npm start
 ```
