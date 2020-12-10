@@ -25,7 +25,7 @@ app.use(cors({origin: 'https://franz123geege.herokuapp.com/'}));
 → localhost:3000/items/ (this returns array of objects)
 → localhost:3000/items/:id (this returns single object)
 */
-app.use('/items', itemsRouter);
+app.use('/info', itemsRouter);
 
 // default URL to API
 app.use('/', function(req, res) {

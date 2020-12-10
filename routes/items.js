@@ -22,18 +22,18 @@ router.get('/', function (req, res) {
 // READ
 // this api end-point returns an object from a data array find by id
 // we get `id` from URL end-points
-router.get('/db', async (req, res) => {
-    try {
-      const client = await pool.connect();
-      const result = await client.query('SELECT * FROM test_table');
-      const results = { 'results': (result) ? result.rows : null};
-      res.render('pages/db', results );
-      client.release();
-    } catch (err) {
-      console.error(err);
-      res.send("Error " + err);
+router.get('/:id', function (req, res) {
+    // find an object from `data` array match by `id`
+    let found = data.find(function (item) {
+        return item.id === parseInt(req.params.id);
+    });
+    // if object found return an object else return 404 not-found
+    if (found) {
+        res.status(200).json(found);
+    } else {
+        res.sendStatus(404);
     }
-  })
+});
 
 // CREATE
 // this api end-point add new object to item list
