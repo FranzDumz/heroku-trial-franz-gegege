@@ -16,6 +16,24 @@ let data = [
 // READ
 // this api end-point of an API returns JSON data array
 router.get('/', function (req, res) {
+    const { Client } = require('pg');
+
+const client = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
+
+client.connect();
+
+client.query('SELECT * FROM info;', (err, res) => {
+  if (err) throw err;
+  for (let row of res.rows) {
+    console.log(JSON.stringify(row));
+  }
+  client.end();
+});
     res.status(200).json(data);
 });
 
