@@ -5,17 +5,20 @@
   "engines": {
     "node": "12.x"
   },
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node index.js",
     "test": "node test.js"
   },
   "dependencies": {
     "@feathersjs/feathers": "^4.5.10",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "ejs": "^2.7.4",
     "express": "^4.17.1",
-    "pg": "^8.5.1"
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5"
   },
   "devDependencies": {
     "got": "^11.3.0",
@@ -27,5 +30,6 @@
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "author": ""
 }
