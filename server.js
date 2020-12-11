@@ -19,12 +19,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to heroku application." });
+  res.json({ message: "Welcome to bezkoder application." });
 });
 
 // set port, listen for requests
 const PORT = process.env.PORT || 5432;
- require("./routes/turorial.routes.js")(app);
+ require("./app/routes/tutorial.routes.js")(app);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
